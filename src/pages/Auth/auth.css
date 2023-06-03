@@ -1,0 +1,76 @@
+.login_page {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.login_page .left {
+  min-height: 100vh;
+  background: var(--c-primary);
+}
+.login_page .left img {
+  width: 100%;
+}
+.login_page .right {
+  flex-direction: column;
+  padding: 1rem;
+}
+.login_page .right form {
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.register_page,
+.forgot_password {
+  min-height: 100vh;
+}
+.register_page form {
+  max-width: 400px;
+  width: 100%;
+}
+.register_page form button {
+  margin-top: 20px;
+}
+
+.forgot_password {
+  text-align: center;
+}
+
+.forgot_password form {
+  margin-top: 15px;
+  max-width: 400px;
+  width: 100%;
+}
+.forgot_password button {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .login_page .left.center {
+    display: none;
+  }
+  .login_page {
+    grid-template-columns: unset;
+  }
+}
+
+.auth-btn {
+  width: 200px;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.github-btn {
+  background: #434342;
+  color: #ffffff;
+}
+.github-btn:hover {
+  background: #272727;
+}
